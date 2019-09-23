@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[18]:
-
-
 import random
 import time
 
@@ -21,9 +18,7 @@ def sequential_search(a_list, item):
             position = position + 1
 
     end_time = time.time()
-
     run_time = end_time - start_time
-
     return (run_time, found)
 
 # Function for searching ordered list to check if an item exists in the list.
@@ -46,9 +41,7 @@ def ordered_sequential_search(a_list, item):
                 position = position + 1
 
     end_time = time.time()
-
     run_time = end_time - start_time
-
     return (run_time, found)
 
 # Function for searching ordered list to check if an item exists in the list using binary iterative method.
@@ -72,16 +65,13 @@ def binary_search_iterative(a_list, item):
                 first = midpoint + 1
 
     end_time = time.time()
-
     run_time = end_time - start_time
-
     return (run_time, found)
 
 # Function for searching ordered list to check if an item exists in the list using binary recursive method.
 # Also returns the length of time the search required.
 def binary_search_recursive(a_list, item):
     a_list = sorted(a_list)
-
     start_time = time.time()
 
     if len(a_list) == 0:
@@ -97,9 +87,7 @@ def binary_search_recursive(a_list, item):
                 return binary_search_recursive(a_list[midpoint + 1:], item)
 
     end_time = time.time()
-
     run_time = end_time - start_time
-
     return (run_time, found)
 
 # Function to generate list of random values
@@ -130,16 +118,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
